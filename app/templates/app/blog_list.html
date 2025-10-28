@@ -1,0 +1,13 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+   <div class="add-btn-container">
+    <a href="{% url 'blog_create' %}" class="btn btn-add">+ New Blog Post</a>
+</div>
+
+   {%  for post in post_list %}
+       <div class ="post-entry">
+           <h2><a href="{% url 'blog_detail' post.pk %}">{{ post.title }}</a></h2>
+       </div>
+    {% endfor %}
+{% endblock content %}

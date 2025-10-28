@@ -1,0 +1,14 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+<div class="create-post-container">
+    <h1>📝 New Post</h1>
+
+    <form action="{% url 'blog_create' %}" method="post" class="create-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Save" class="btn btn-save">
+        <a href="{% url 'blog' %}" class="btn btn-cancel">Cancel</a>
+    </form>
+</div>
+{% endblock content %}

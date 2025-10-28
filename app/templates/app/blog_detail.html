@@ -1,0 +1,14 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="post-entry">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+</div>
+
+<div class="post-actions">
+    <a href="{% url 'blog_update' post.pk %}" class="btn btn-edit">✏️ Edit Blog</a>
+    <a href="{% url 'blog_delete' post.pk %}" class="btn btn-delete">🗑️ Delete Blog</a>
+</div>
+{% endblock content %}

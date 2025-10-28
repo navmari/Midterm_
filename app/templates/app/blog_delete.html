@@ -1,0 +1,16 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="delete-container">
+    <h1>Delete Post</h1>
+    <form action="{% url 'blog_delete' object.pk %}" method="post">
+        {% csrf_token %}
+        <p>Are you sure you want to delete "<strong>{{ post.title }}</strong>"?</p>
+        <div class="button-group">
+            <input type="submit" value="Confirm" class="btn btn-danger">
+            <a href="{% url 'blog_detail' post.pk %}" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock content %}

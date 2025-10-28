@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Mari Navales</title>
+        <link rel="icon" type="image/png" href="{% static 'images/myfav.png' %}">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    </head>
+    <body>
+        {% include 'app/navbar.html' %}
+        {% block content %}
+        <!--pages-->
+        {% endblock content %}
+        <script src="{% static 'js/base.js' %}"></script>
+    </body>
+</html>

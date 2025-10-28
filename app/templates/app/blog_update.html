@@ -1,0 +1,16 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+<div class="edit-post-container">
+    <h1>✏️ Edit Post</h1>
+
+    <form action="{% url 'blog_update' object.pk %}" method="post" class="edit-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="form-buttons">
+            <input type="submit" value="Update" class="btn btn-update">
+            <a href="{% url 'blog_detail' object.pk %}" class="btn btn-cancel">Cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock content %}

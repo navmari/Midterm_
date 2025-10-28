@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+h1 {
+  color: crimson;
+  text-align: center;
+}
+
+h2 {
+  color: deeppink;
+  text-align: center;
+  font-style: italic;
+}
+
+
+.mylogo {
+  height: auto;
+  width: 500px;
+  display: block;
+  margin: 20px auto;
+}
+
+
+p {
+  text-align: justify;
+  margin: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: normal;
+}
+.post-entry {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+.post-entry h2 {
+  margin: 0.5rem 0;
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 15px;
+
+}
+
+.post-entry h2 a {
+  color: blue;
+  text-decoration: none;
+}
+
+.post-entry h2 a:hover {
+  color: darkblue;
+}
+
+.post-entry p {
+  margin: 0.5rem 0;
+  font-weight: 400;
+  text-align: center;
+}
+.post-entry p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+/* === NAVBAR / HEADER === */
+header {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 15px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Flex container for links */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation links styling */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff4da6;
+}
+.delete-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.delete-container h1 {
+    color: #d9534f;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+.add-btn-container {
+    text-align: center;      /* centers inline elements like <a> */
+    margin: 30px 0;          /* adds space above and below */
+}
+
+.btn-add {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: all 0.2s ease;
+    display: inline-block;   /* needed for text-align center to work */
+}
+
+.btn-add:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+.create-post-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.create-post-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.create-form p {
+    margin-bottom: 15px;
+}
+
+.create-form input[type="text"],
+.create-form textarea,
+.create-form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.create-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn-save {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+}
+
+.btn-save:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.btn-cancel {
+    background-color: #6c757d;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.btn-cancel:hover {
+    background-color: #5a6268;
+}
+.create-post-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.create-post-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.create-form p {
+    margin-bottom: 15px;
+}
+
+.create-form input[type="text"],
+.create-form textarea,
+.create-form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.create-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn-save {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+}
+
+.btn-save:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.btn-cancel {
+    background-color: #6c757d;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.btn-cancel:hover {
+    background-color: #5a6268;
+}
+.edit-post-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.edit-post-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.edit-form p {
+    margin-bottom: 15px;
+}
+
+.edit-form input[type="text"],
+.edit-form textarea,
+.edit-form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.edit-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-update {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-update:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-cancel {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #5a6268;
+}

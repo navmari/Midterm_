@@ -1,0 +1,2 @@
+console.log("Hello po! This is Maricar Navales' this is my first time to use Django framework. I hope you would understand my code. Thank you po!");
+console.log("This is Navales 'static js base file");
